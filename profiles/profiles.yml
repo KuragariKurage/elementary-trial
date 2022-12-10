@@ -1,0 +1,23 @@
+elementary_tutorial:
+  outputs:
+    default:
+      dbname: "{{ env_var('REDSHIFT_DBNAME') }}"
+      host: "{{ env_var('REDSHIFT_HOST') }}"
+      password: "{{ env_var('REDSHIFT_PASSWORD') }}"
+      port: "{{ env_var('REDSHIFT_PORT') | as_number }}"
+      schema: "{{ env_var('REDSHIFT_SCHEMA') }}"
+      threads: 4
+      type: redshift
+      user: "{{ env_var('REDSHIFT_USERNAME') }}"
+      sslmode: require
+elementary:
+  outputs:
+    default:
+      type: redshift
+      host: "{{ env_var('REDSHIFT_HOST') }}"
+      port: "{{ env_var('REDSHIFT_PORT') | as_number }}"
+      user: "{{ env_var('REDSHIFT_USERNAME') }}"
+      password: "{{ env_var('REDSHIFT_PASSWORD') }}"
+      dbname: "{{ env_var('REDSHIFT_DBNAME') }}"
+      schema: "{{ env_var('REDSHIFT_SCHEMA') + '_elementary' }}"
+      threads: 4
