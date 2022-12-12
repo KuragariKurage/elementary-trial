@@ -34,4 +34,4 @@ docker compose exec -it dbt_container bash
 ```
 
 Tips:
-VScodeのコンテナ接続（[dev container](https://code.visualstudio.com/docs/devcontainers/containers)）を使うとコマンド実行諸々が楽にできます。
+VScodeのコンテナ接続（[dev container](https://code.visualstudio.com/docs/devcontainers/containers)）を使うとコマンド実行諸々が楽に行えます。
