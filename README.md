@@ -27,5 +27,11 @@ dbtの動作確認を行います。
 docker compose exec dbt_container dbt debug --project-dir ./elementary-tutorial-main
 ```
 
+コンテナ内のシェル起動は次のコマンドで実行します。
+
+```shell
+docker compose exec -it dbt_container bash
+```
+
 Tips:
-VScodeのコンテナ接続（dev container）を使うとコマンド実行が楽です。
+VScodeのコンテナ接続（[dev container](https://code.visualstudio.com/docs/devcontainers/containers)）を使うとコマンド実行諸々が楽にできます。
